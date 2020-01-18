@@ -1,6 +1,6 @@
 Name:           protobuf-c
 Version:        1.0.2
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        C bindings for Google's Protocol Buffers
 
 
@@ -69,6 +69,9 @@ rm -f $RPM_BUILD_ROOT/%{_libdir}/libprotobuf-c.la
 %{_libdir}/pkgconfig/libprotobuf-c.pc
 
 %changelog
+* Thu Jul 07 2016 Adrian Reber <areber@redhat.com> - 1.0.2-3
+- rebuilt for ppc64le
+
 * Mon Aug 17 2015 Adrian Reber <areber@redhat.com> - 1.0.2-2
 - remove 'ExcludeArch' hack
 
